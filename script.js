@@ -8,7 +8,7 @@ async function loadThreeSeries() {
         const serie3 = data[23];
 
         document.getElementById('serie-api-1').innerHTML = `
-            <img src="${serie1.image.medium}" alt="${serie1.name}">
+            <img src="${serie1.image.medium}">
             <h2>${serie1.name}</h2>
             <h3>${serie1.premiered.split('-')[0]} - Present</h3>
             <h1>+ ${serie1.weight}K</h1>
@@ -16,7 +16,7 @@ async function loadThreeSeries() {
         `;
 
         document.getElementById('serie-api-2').innerHTML = `
-            <img src="${serie2.image.medium}" alt="${serie2.name}">
+            <img src="${serie2.image.medium}">
             <h2>${serie2.name}</h2>
             <h3>${serie2.premiered.split('-')[0]} - Present</h3>
             <h1>+ ${serie2.weight}K</h1>
@@ -24,7 +24,7 @@ async function loadThreeSeries() {
         `;
 
         document.getElementById('serie-api-3').innerHTML = `
-            <img src="${serie3.image.medium}" alt="${serie3.name}">
+            <img src="${serie3.image.medium}">
             <h2>${serie3.name}</h2>
             <h3>${serie3.premiered.split('-')[0]} - Present</h3>
             <h1>+ ${serie3.weight}K</h1>
@@ -77,3 +77,4 @@ async function loadThreefilms() {
 }
 
 loadThreefilms();
+
